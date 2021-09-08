@@ -1,8 +1,8 @@
 var img = document.getElementById('img');
 
-img.addEventListener('click',async () => {
+img.addEventListener('click', async () => {
   const response = await fetch(img.src);
-var blob =await response.blob();
+  var blob = await response.blob();
   const filesArray = [
     new File(
       [blob],
